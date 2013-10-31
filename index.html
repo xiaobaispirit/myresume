@@ -1,0 +1,163 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="tooltipster.css">
+	
+	 <script src="js/jquery-2.0.3.min.js"></script>
+	<!-- // <script src="js/jquery-1.10.2.min.js"></script> -->
+	<script src="js/jquery.tooltipster.min.js"></script>
+	<script src="js/lightbox-2.6.min.js"></script>
+	<link rel="stylesheet" href="lightbox.css">
+	<script>
+	jQuery(document).ready(function($) {
+		$('.tooltip').tooltipster({
+			position:'top-left',
+			theme:'.tooltipster-shadow'
+		});
+	});	
+	</script>
+	
+</head>
+<body>
+	<div class="section-opening">
+		<div class="header">
+			<ul>
+				<li><a class="current" href="#">Home</a></li>
+				<li><a href="#">Experience</a></li>
+				<li><a href="#">Works+Skill</a></li>
+				<li><a href="#">About me</a></li>
+				<li><a href="#">Contacts</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="leftbox"></div>
+			<div class="centerbox">
+				<img class="designer-img" src="images/designer-text.gif" alt="designer">
+				<img class="developer-img" src="images/developer-text.gif" alt="developer">
+			</div>
+			<div class="rightbox"></div>
+			<div class="clear"></div>
+			<div class="divider"></div>
+		</div>
+	</div>
+	<div class="section-experience">
+		<div class="exp-header"></div>
+		<div class="exp-content">
+			<div class="leftside">
+				<div class="birth">
+					<p>1988年10月</p>
+					<p>生于河北邯郸</p>
+				</div>
+				<div class="graduate">
+					<p>2011年7月</p>
+					<p>毕业于</p>
+					<p>江西师范大学</p>
+					<p class="tooltip" title="通过软件设计师考试和英语六级考试">软件工程专业</p>
+				</div>
+				<div class="sina">
+					<p>2012年5月</p>
+					<p>入职新浪厦门</p>
+					<p>创意文案</p>
+				</div>
+				<div class="keqiang">
+				<p>2013年1月</p>
+				<p>进入北京科强</p>
+				<p>网页设计师</p>
+				</div>
+			</div>
+			<div class="rightside">
+				<div class="childhood">
+					<img class="mark" src="images/mark.gif" alt="">
+					<p>经过漫长而荒诞的青少年时期</p>
+				</div>
+				<div class="gapyear">
+				<img class="mark" src="images/mark.gif" alt="">
+					<p>开始了自己的间隔年</p>
+					<p>经历了许多奇异的旅程</p>
+					<p>并与朋友经营了自己的客栈</p>
+					<br>
+					<p>诗歌、音乐、啤酒</p>
+					<p>在理想的光芒里</p>
+					<p>却偶然看不清自己</p>
+				</div>
+				<div class="copywrite">
+				<img class="mark" src="images/mark.gif" alt="">
+					<p>
+						主要负责团购文案的撰写微博内容的行销
+					</p>
+					<p>
+						同时也对从事一些图片处理的工作
+					</p>
+				</div>
+				<div class="webdesign">
+				<img class="mark" src="images/mark.gif" alt="">
+				<p>参与公司各种信息化产品的原型设计</p>
+				<p>负责网页设计 生成效果图</p>
+				<p>参与前端开发的部分工作</p>
+				<p>撰写符合w3c标准、兼容各<span class="tooltip" title="使用Chrome调试、兼容IE与火狐">浏览器</span>的页面</p>
+				</div>
+				<div class="untilnow">					
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="exp-bottom"></div>
+	</div>
+	<div class="section-works">
+		<div class="work-content">
+			<div class="pic-box">
+				<a href="images/work1.jpg" data-lightbox="1">
+					<img src="images/work1.jpg" alt="mini-img" class="mini-img">
+				</a>		
+			</div>
+			<div class="pic-box">
+				<a href="images/work2.jpg" data-lightbox="1">
+					<img src="images/work2.jpg" alt="mini-img" class="mini-img">
+				</a>
+			</div>
+			<div class="pic-box">
+				<a href="images/work4.jpg" data-lightbox="1">
+					<img src="images/work4mini.jpg" alt="mini-img" class="mini-img" >
+				</a>
+			</div>
+			<div class="pic-box">
+				<a href="images/work3.jpg" data-lightbox="1">
+					<img src="images/work3.jpg" alt="mini-img" class="mini-img">
+				</a>
+			</div>	
+			<div class="clear"></div>			
+		</div>
+		<div class="skill-title"></div>
+		<div class="skill">
+			<img src="images/flash.png" alt="flash" class="bubble flash">
+			<img src="images/jquery.png" alt="jquery" class="bubble jquery">
+			<img src="images/css.png" alt="css" class="bubble css">
+			<img src="images/html.png" alt="html" class="bubble html">
+			<img src="images/ps.png" alt="ps" class="bubble ps">
+		</div>
+		<div class="also">
+			<p class="im-also">I AM ALSO A...</p>
+		</div>
+		
+	</div>
+
+	<div class="section-about"></div>	
+	<div class="section-contacts"></div>
+	<script>
+		$(".bubble").hover(function() {
+		$(this).animate({
+			bottom: "10px"},200,function(){
+				$(this).animate({
+					bottom: "0px"},
+					200);
+			});
+	},function(){
+		$(this).bottom=0;
+	}
+
+	);	
+	</script>
+</body>
+</html>
